@@ -17,6 +17,7 @@ header {
 section {
     background-color: rgba(99, 84, 84, 0.185);
     border: 1px solid black;
+    color: blue;
     width: 70%;
     max-width: 1000px;
     margin: auto;
