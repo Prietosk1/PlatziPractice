@@ -6,6 +6,7 @@ section {
     background-color: rgba(99, 84, 84, 0.185);
     border: 1px solid black;
     width: 70%;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     font-size: 20px;
