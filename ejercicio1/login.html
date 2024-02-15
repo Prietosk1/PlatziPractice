@@ -16,7 +16,14 @@
     <div class="container">
       <div class="login-container">
         <img src="./Logos/logo_yard_sale.svg" alt="logo" class="logo" />
-        <form action="/" class="form">
+        <form action="#" class="form">
+          <label for="email" class="label">Email address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            class="input input-email"
+          />
           <label for="password" class="label">Password</label>
           <input
             type="password"
@@ -24,19 +31,14 @@
             placeholder="*********"
             class="input input-password"
           />
-          <label for="new-password" class="label">Re-enter password</label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            class="input input-password"
-          />
           <input
             type="submit"
-            value="Confirm"
+            value="Log In"
             class="primary-button login-button"
           />
+          <a href="#">Forgot my password</a>
         </form>
+        <button class="secondary-button signup-button">Sign up</button>
       </div>
     </div>
   </body>
