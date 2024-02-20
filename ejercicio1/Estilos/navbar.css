@@ -65,8 +65,9 @@ a:hover {
 li {
     color: var(--very-light-pink);
 }
-#navbar-email {
-    margin-right: 12px;
+#navbar-arrow {
+    margin: auto 24px auto 12px;
+    transform: rotate(90deg);
 }
 
 #shop-icon {
@@ -101,7 +102,7 @@ li {
         display: none;
     }
 
-    #navbar-email {
+    #navbar-email,#navbar-arrow {
         display: none;
     }
 
