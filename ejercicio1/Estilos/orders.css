@@ -1,4 +1,10 @@
 body {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100vh;
+
     font-family: "Quicksand", sans-serif;
     margin: 0;
 }
@@ -12,4 +18,43 @@ body {
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+}
+
+.my-order-container {
+    width: 400px;
+}
+
+.my-order-container h1 {
+    font-size: var(--lg);
+
+    margin-bottom: 40px;
+}
+
+.my-order-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+#date, #price {
+    font-weight: bold;
+}
+
+#price {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#arrow {
+    margin: auto 10px;
+}
+
+@media (max-width: 460px) {
+    .my-order-container {
+        width: 300px;
+
+        margin: 5vh 0;
+    }
 }
