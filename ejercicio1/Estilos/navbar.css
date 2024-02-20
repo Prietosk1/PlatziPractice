@@ -13,3 +13,99 @@ body {
     --md: 16px;
     --lg: 18px;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+
+    height: 70px;
+
+    border-bottom: 1px solid var(--very-light-pink);
+    
+}
+
+.navbar-left {
+    display: flex;
+}
+
+#menu {
+    display: none;
+}
+
+#logo {
+    width: 100px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    margin: auto 12px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+
+    border: 1p solid white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+a:hover {
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+
+li {
+    color: var(--very-light-pink);
+}
+#navbar-email {
+    margin-right: 12px;
+}
+
+#shop-icon {
+    position: relative;
+}
+
+#shop-icon p{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    margin: 0 auto 0;
+
+    font-size: var(--sm);
+    text-align: center;
+
+    width: 20px;
+    height: 20px;
+    
+
+    background-color:var(--hospital-green);
+    color: black;
+
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    #navbar-email {
+        display: none;
+    }
+
+    #logo {
+        width: 150px;
+    }
+}
