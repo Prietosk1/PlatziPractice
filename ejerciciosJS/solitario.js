@@ -10,10 +10,7 @@ function barajarMazo (mazo) {
 }
 
 function repartirMazo (mazo, cartasRepartidas) {
-    const nuevoMazo = []
-    for (i=0; i < cartasRepartidas; i++) {
-        nuevoMazo.push(mazo[i])
-    }
+    const nuevoMazo = mazo.splice(0,cartasRepartidas)
     return nuevoMazo
 }
 
@@ -22,4 +19,13 @@ const cantidadCartas = 8
 const listaCartas = ["A♣️","2♣️","3♣️","4♣️","5♣️","6♣️","7♣️","8♣️","9♣️","10♣️","J♣️","Q♣️","K♣️","A♥️","2♥️","3♥️","4♥️","5♥️","6♥️","7♥️","8♥️","9♥️","10♥️","J♥️","Q♥️","K♥️","A♠️","2♠️","3♠️","4♠️","5♠️","6♠️","7♠️","8♠️","9♠️","10♠️","J♠️","Q♠️","K♠️","A♦️","2♦️","3♦️","4♦️","5♦️","6♦️","7♦️","8♦️","9♦️","10♦️","J♦️","Q♦️","K♦️"]
 
 const mazoReorganizado = barajarMazo(listaCartas)
-console.log(repartirMazo(mazoReorganizado, cantidadCartas))
+
+const mazoJugador1 = repartirMazo(mazoReorganizado, 8)
+const mazoJugador2 = repartirMazo(mazoReorganizado, 8)
+const mazoJugador3 = repartirMazo(mazoReorganizado, 8)
+
+console.log(`
+    Mazo del Jugador 1: ${mazoJugador1}
+    Mazo del Jugador 2: ${mazoJugador2}
+    Mazo del Jugador 3: ${mazoJugador3}
+    `)
